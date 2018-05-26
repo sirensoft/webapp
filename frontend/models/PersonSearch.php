@@ -8,12 +8,12 @@ use yii\data\ActiveDataProvider;
 use frontend\models\Person;
 
 /**
- * PersonSearch represents the model behind the search form of `frontend\models\Person`.
+ * PersonSearch represents the model behind the search form about `frontend\models\Person`.
  */
 class PersonSearch extends Person
 {
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function rules()
     {
@@ -24,7 +24,7 @@ class PersonSearch extends Person
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function scenarios()
     {
@@ -43,8 +43,6 @@ class PersonSearch extends Person
     {
         $query = Person::find();
 
-        // add conditions that should always apply here
-
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
@@ -57,7 +55,6 @@ class PersonSearch extends Person
             return $dataProvider;
         }
 
-        // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
             'birth' => $this->birth,

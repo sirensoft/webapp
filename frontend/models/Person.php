@@ -47,7 +47,7 @@ class Person extends \yii\db\ActiveRecord
             'prename' => 'Prename',
             'fname' => 'Fname',
             'lname' => 'Lname',
-            'birth' => 'Birth',
+            'birth' => 'วดป.เกิด',
             'sex' => 'Sex',
         ];
     }
