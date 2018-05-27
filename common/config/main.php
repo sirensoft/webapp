@@ -14,6 +14,9 @@ return [
     'modules' => [
         'gridview' => [
             'class' => '\kartik\grid\Module'
-        ]
+        ],
+        'tehn' => [
+            'class' => 'modules\tehn\Tehn',
+        ],
     ]
 ];

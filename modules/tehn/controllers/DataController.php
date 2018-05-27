@@ -1,6 +1,7 @@
 <?php
 
-namespace frontend\controllers;
+namespace modules\tehn\controllers;
+use common\components\MyLine;
 
 class DataController extends \yii\web\Controller {
 
@@ -38,6 +39,9 @@ class DataController extends \yii\web\Controller {
         $dataProvider = new \yii\data\ArrayDataProvider([
             'allModels'=>$raw
         ]);
+        
+       
+        
         return $this->render('data1',[
             'dataProvider'=>$dataProvider,
             'date1'=>$date1,
