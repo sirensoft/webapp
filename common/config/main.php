@@ -18,5 +18,11 @@ return [
         'tehn' => [
             'class' => 'modules\tehn\Tehn',
         ],
+        'querystore' => [
+            'class' => 'modules\querystore\Querystore',
+        ],
+        'report' => [
+            'class' => 'modules\report\Report',
+        ],
     ]
 ];
